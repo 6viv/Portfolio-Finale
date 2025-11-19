@@ -1,14 +1,23 @@
+:root {
+    --gris-bordure : rgb(149, 165, 181);
+    --bleu-foncé : rgb(0, 102, 204);
+    --bleu-boutons : rgb(0, 153, 255);
+    --blanc: rgb(255, 255, 255);
+    --gris-bleu : rgb(200, 230, 255);
+}
+
 body {
     background-color: rgb(120, 200, 255);
     background-size: cover;
-    background-image: url("images/pixel_clouds.jpg")
+    background-image: url("images/pixel_clouds.jpg");
 }
 
 header {
-    background-color: rgb(0, 102, 204);
+    background-color: rgba(0, 102, 204, 0.5);
     color: white;
     padding: 10px;
-    border: 3.5px solid rgb(149, 165, 181)
+    border: 3.5px solid var(--gris-bordure);
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -20,19 +29,19 @@ nav ul {
 }
 
 nav a {
-    color: white;
-    background-color: rgb(0, 153, 255);
+    color: var(--blanc);
+    background-color: var(--bleu-boutons);
     padding: 8px 12px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid var(--blanc);
 }
 
 nav a:hover {
-    background-color: rgb(0, 102, 204);
+    background-color: yellow;
 }
 
 main {
-    background-color: rgb(200, 230, 255); 
-    padding: 20px;
-    border: 3px solid rgb(149, 165, 181);
-
+    background-color: var(--gris-bleu); 
+    padding: 25px;
+    border: 3px solid var(--gris-bordure);
 }
+
