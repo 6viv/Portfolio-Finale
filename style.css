@@ -15,6 +15,7 @@ body {
 header {
     background-color: rgba(0, 102, 204, 0.5);
     color: white;
+    text-align: center;
     padding: 10px;
     border: 3.5px solid var(--gris-bordure);
     margin-bottom: 10px;
@@ -45,3 +46,12 @@ main {
     border: 3px solid var(--gris-bordure);
 }
 
+footer {
+    background-color: white;
+    color : #003366;
+    text-align: center;
+    padding: 1px;
+    text-shadow: 2px 2px blue;
+    border: 3px solid var(--gris-bordure);
+    margin-top: 2.5px;
+}
