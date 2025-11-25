@@ -1,16 +1,33 @@
+/* ============================================================
+                    Création des varables                  
+============================================================ */
+
 :root {
     --gris-bordure : rgb(149, 165, 181);
     --bleu-foncé : rgb(0, 102, 204);
     --bleu-boutons : rgb(0, 153, 255);
     --blanc: rgb(255, 255, 255);
     --gris-bleu : rgb(200, 230, 255);
+    --blanc : #fff;
+    --noir: #000;
+    --bleu: rgb(0, 0, 255);
 }
+
+/* ============================================================
+                  Style body : Stylise la page                 
+============================================================ */
 
 body {
     background-color: rgb(120, 200, 255);
     background-size: cover;
     background-image: url("images/pixel_clouds.jpg");
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ============================================================
+                Style header : Barre du haut                
+============================================================ */
+
 
 header {
     background-color: rgba(0, 102, 204, 0.5);
@@ -18,8 +35,21 @@ header {
     text-align: center;
     padding: 10px;
     border: 3.5px solid var(--gris-bordure);
+    box-shadow: 4px 4px 0px var(--noir);
     margin-bottom: 10px;
+    padding: 5px;
 }
+
+header h1 {
+    margin: 10px;
+    font-size: 40px;
+    color: var(--blanc);
+    text-shadow: 3px 3px 0px var(--noir);
+}
+
+/* ============================================================
+                        Menu : navbar               
+============================================================ */
 
 nav ul {
     list-style: none;
@@ -27,6 +57,7 @@ nav ul {
     gap: 15px;
     display: grid;
     grid-auto-flow: column;
+    margin: 15px;
 }
 
 nav a {
@@ -34,24 +65,31 @@ nav a {
     background-color: var(--bleu-boutons);
     padding: 8px 12px;
     border: 2px solid var(--blanc);
+    font-weight: bold;
+    background-color: var(--bleu); /* à modifier */
+    padding: 8px 15px; /* faire des petites modification pour trouver les bonnes dimentions*/
+    border: 3px solid var(--noir);
+    box-shadow: 3px 3px 0px var(--noir);
 }
 
 nav a:hover {
-    background-color: yellow;
+    background-color: var(--bleu-boutons);
 }
 
 main {
     background-color: var(--gris-bleu); 
     padding: 25px;
     border: 3px solid var(--gris-bordure);
+    margin: 20px;
+    box-shadow: 4px 4px 0px var(--noir);
 }
 
 footer {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color : #003366;
     text-align: center;
     padding: 1px;
-    text-shadow: 2px 2px blue;
+    text-shadow: 2px 2px rgb(220, 220, 220);
     border: 3px solid var(--gris-bordure);
     margin-top: 2.5px;
 }
