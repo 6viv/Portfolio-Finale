@@ -1,5 +1,5 @@
 /* ============================================================
-                    Création des varables                  
+                            Variable                  
 ============================================================ */
 
 :root {
@@ -13,83 +13,153 @@
     --bleu: rgb(0, 0, 255);
 }
 
+
 /* ============================================================
-                  Style body : Stylise la page                 
+                            Body                  
 ============================================================ */
 
 body {
-    background-color: rgb(120, 200, 255);
-    background-size: cover;
+    margin: 0;
     background-image: url("images/pixel_clouds.jpg");
-    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    font-family: Arial, sans-serif;
 }
 
 /* ============================================================
-                Style header : Barre du haut                
+                            Contour                  
 ============================================================ */
 
+.pixel-frame {
+    border: 10px solid transparent;
+    padding: 20px;
+    background-image: url("images/pixel_border.png");
+}
+
+/* ============================================================
+                            Fenêtre                  
+============================================================ */
+
+.win98-window {
+    border: 3px solid black;
+    background: #c0c0c0;
+    box-shadow: 5px 5px 0px #000;
+}
+
+/* ============================================================
+                            Barre                  
+============================================================ */
+
+.title-bar {
+    background: #00008b;
+    color: white;
+    padding: 4px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ============================================================
+                        Boutons barre                  
+============================================================ */
+
+.title-buttons button {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+    border: 2px solid #ffffff;
+    background: #c0c0c0;
+    cursor: pointer;
+}
+
+/* ============================================================
+                            Header                  
+============================================================ */
 
 header {
-    background-color: rgba(0, 102, 204, 0.5);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border: 3.5px solid var(--gris-bordure);
-    box-shadow: 4px 4px 0px var(--noir);
-    margin-bottom: 10px;
-    padding: 5px;
+    padding: 15px;
+    border-bottom: 2px solid black;
 }
 
 header h1 {
-    margin: 10px;
-    font-size: 40px;
-    color: var(--blanc);
-    text-shadow: 3px 3px 0px var(--noir);
+    margin: 0 0 15px;
+    color: navy;
+    font-size: 32px;
+    text-shadow: 2px 2px #7bb0ff;
 }
 
 /* ============================================================
-                        Menu : navbar               
+                            Navigation                  
 ============================================================ */
 
 nav ul {
     list-style: none;
-    justify-content: center;
-    gap: 15px;
-    display: grid;
-    grid-auto-flow: column;
-    margin: 15px;
+    padding: 0;
+    display: flex;
+    gap: 10px;
 }
 
 nav a {
-    color: var(--blanc);
-    background-color: var(--bleu-boutons);
-    padding: 8px 12px;
-    border: 2px solid var(--blanc);
-    font-weight: bold;
-    background-color: var(--bleu); /* à modifier */
-    padding: 8px 15px; /* faire des petites modification pour trouver les bonnes dimentions*/
-    border: 3px solid var(--noir);
-    box-shadow: 3px 3px 0px var(--noir);
+    text-decoration: none;
+    background-color: white;
+    border: 3px solid black;
+    padding: 5px 12px;
+    color: black;
+    box-shadow: 3px 3px 0 black;
 }
 
 nav a:hover {
-    background-color: var(--bleu-boutons);
+    background: yellow;
 }
+
+/* ============================================================
+                        Corps Body                  
+============================================================ */
 
 main {
-    background-color: var(--gris-bleu); 
-    padding: 25px;
-    border: 3px solid var(--gris-bordure);
-    margin: 20px;
-    box-shadow: 4px 4px 0px var(--noir);
+    padding: 20px;
+    background: #7ab2e6;
+    border-top: 2px solid black;
 }
 
-footer {
-    background-color: rgb(255, 255, 255);
-    color : #003366;
-    text-align: center;
-    padding: 1px;
-    text-shadow: 2px 2px rgb(220, 220, 220);
-    border: 3px solid var(--gris-bordure);
-    margin-top: 2.5px;
+/* --- ICONES --- */
+.retro-icons img {
+    width: 40px;
+    image-rendering: pixelated;
+    margin-right: 10px;
 }
+
+/* --- GIFS GEOCITIES --- */
+.geocities-buttons img {
+    width: 120px;
+    margin: 10px;
+    image-rendering: pixelated;
+}
+
+/* --- POP-UP WINDOWS 98 --- */
+.popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 250px;
+    background: #c0c0c0;
+    border: 3px solid black;
+    box-shadow: 5px 5px 0px black;
+}
+
+.popup-title {
+    background: navy;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.popup-content {
+    padding: 10px;
+}
+
+.popup-content button {
+    background: #e0e0e0;
+    padding: 4px 15px;
+    border: 2px solid black;
+} 
