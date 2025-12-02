@@ -13,7 +13,6 @@
     --bleu: rgb(0, 0, 255);
 }
 
-
 /* ============================================================
                             Body                  
 ============================================================ */
@@ -29,7 +28,7 @@ body {
                             Contour                  
 ============================================================ */
 
-.pixel-frame {
+.cadre {
     border: 10px solid transparent;
     padding: 20px;
     background-image: url("images/pixel_border.png");
@@ -39,7 +38,7 @@ body {
                             Fenêtre                  
 ============================================================ */
 
-.win98-window {
+.page-annee2000 {
     border: 3px solid black;
     background: #c0c0c0;
     box-shadow: 5px 5px 0px #000;
@@ -49,7 +48,7 @@ body {
                             Barre                  
 ============================================================ */
 
-.title-bar {
+.barre-du-haut {
     background: #00008b;
     color: white;
     padding: 4px;
@@ -62,7 +61,7 @@ body {
                         Boutons barre                  
 ============================================================ */
 
-.title-buttons button {
+.boutons button {
     width: 18px;
     height: 18px;
     margin-left: 3px;
@@ -88,7 +87,7 @@ header h1 {
 }
 
 /* ============================================================
-                            Navigation                  
+                            NavBar                  
 ============================================================ */
 
 nav ul {
@@ -121,45 +120,64 @@ main {
     border-top: 2px solid black;
 }
 
-/* --- ICONES --- */
-.retro-icons img {
-    width: 40px;
-    image-rendering: pixelated;
-    margin-right: 10px;
+.accueil-cadre {
+    margin: 20px;
 }
 
-/* --- GIFS GEOCITIES --- */
-.geocities-buttons img {
-    width: 120px;
-    margin: 10px;
-    image-rendering: pixelated;
-}
-
-/* --- POP-UP WINDOWS 98 --- */
-.popup {
-    display: none;
-    position: fixed;
-    top: 30%;
-    left: 40%;
-    width: 250px;
-    background: #c0c0c0;
+/* ============================================================
+                        Encadré                 
+============================================================ */
+.info {
+    background: #e6f3ff;
     border: 3px solid black;
-    box-shadow: 5px 5px 0px black;
+    padding: 15px;
+    box-shadow: 4px 4px 0px black;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
-.popup-title {
-    background: navy;
-    color: white;
-    padding: 5px;
+/* ============================================================
+                        Photo                  
+============================================================ */
+.zone-photo img {
+    width: 140px;
+    height: 140px;
+}
+
+/* ============================================================
+                        Texte Encadré                  
+============================================================ */
+
+.zone-texte h2 {
+    margin-top: 0;
+    color: #003366;
+    text-shadow: 2px 2px #7bb0ff;
+}
+
+.zone-texte p {
+    background: white;
+    padding: 8px;
+    border: 2px solid black;
+}
+
+/* ============================================================
+                        Liens                 
+============================================================ */
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    background: white;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+    color: black;
     font-weight: bold;
 }
 
-.popup-content {
-    padding: 10px;
+.links a:hover {
+    background: yellow;
 }
-
-.popup-content button {
-    background: #e0e0e0;
-    padding: 4px 15px;
-    border: 2px solid black;
-} 
