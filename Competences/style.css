@@ -119,3 +119,27 @@ footer a {
     text-decoration: underline;
     color: blue;
 }
+
+/* ============================================================
+                            Media Query                   
+============================================================ */
+
+    @media screen and (max-width: 768px) {
+
+        .header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            width: 95%;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .logo {
+            width: 50px;
+        }
+    }

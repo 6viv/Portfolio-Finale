@@ -140,3 +140,25 @@ footer a {
     color: cyan;
     text-decoration: underline;
 }
+
+/* ============================================================
+                            Media Query                  
+============================================================ */
+
+
+@media screen and (max-width: 768px) {
+
+    .bande-image {
+        width: 80%;
+        height: auto;
+    }
+
+    .boite-projets {
+        font-size: 16px;
+    }
+
+    .popup-contenu {
+        width: 90%;
+        margin: 60px auto;
+    }
+}

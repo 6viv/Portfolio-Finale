@@ -2,6 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de contact du portfolio de Maxime Descourt, étudiant en BTS SIO. Formulaire de contact pour projets, questions ou collaborations.">
+    <meta name="keywords" content="contact portfolio BTS SIO, étudiant informatique, contact développeur débutant">
+    <meta name="author" content="Maxime Descourt">
+    <meta name="robots" content="index, follow">
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,26 +14,26 @@
 
 <header class="top-bar">
     <h1>Contact</h1>
-    <p>Une question ? Un projet ? Écrivez-moi</p>
+    <p>Une question ou un projet ? N'hésitez pas à me contacter</p>
 </header>
 
 <main class="contact-container">
 
     <section class="intro">
         <h2>Entrons en contact</h2>
-        <p>Vous peuvez utiliser le formulaire ci-dessous pour me contacter. Je réponds dès que possible.</p>
+        <p>Vous peuvez utiliser le formulaire ci-dessous pour me contacter.</p>
     </section>
 
     <section class="contact-form">
 
         <label>
-            Nom / Prénom
-            <input type="text" placeholder="Ton nom">
+            Nom et Prénom
+            <input type="text" placeholder="Ex : Maxime Descourt">
         </label>
 
         <label>
             Adresse email
-            <input type="email" placeholder="ton@email.com">
+            <input type="email" placeholder="exemple@email.com">
         </label>
 
         <label>
@@ -37,22 +42,23 @@
         </label>
 
         <label>
-            Pourquoi me contacter ?
+            Motif de contact
             <select>
+                <option>Sélectionnez un motif</option>
                 <option>Projet professionnel</option>
-                <option>Question</option>
+                <option>Demande d'information</option>
                 <option>Collaboration</option>
                 <option>Autre</option>
             </select>
         </label>
 
         <label>
-            Ton message
-            <textarea placeholder="Écris ton message ici..."></textarea>
+            Message
+            <textarea placeholder="Rédigez votre message ici..."></textarea>
         </label>
 
         <button>Envoyer le message</button>
-        <p id="confirmation" style="display:none; color: rgb(255, 255, 255); margin-top:15px;">✔ Message envoyé avec succès !</p>
+        <p id="confirmation" style="display:none; color: white; margin-top:15px;">Message envoyé avec succès !</p>
 
 
     </section>
