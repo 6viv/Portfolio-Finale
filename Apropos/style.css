@@ -142,3 +142,51 @@ body {
 .comment p {
     margin-left: 15px;
 }
+
+/* ============================================================
+                            Footer                  
+============================================================ */
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff55c2;
+    text-decoration: underline;
+}
+
+footer p {
+    color:#ff55c2;
+}
+
+/* ============================================================
+                            Media Query                   
+============================================================ */
+
+@media screen and (max-width: 768px) {
+
+    .page-container {
+        width: 95%;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .avatar-box {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .comment {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .comment-avatar {
+        margin: 0 auto 10px;
+    }
+}

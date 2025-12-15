@@ -1,0 +1,139 @@
+/* ============================================================
+                            Body                  
+============================================================ */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-image: url("../images/thumb-1920-941898.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ============================================================
+                        Header-barre-contact                  
+============================================================ */
+
+.top-bar {
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+    font-size:large;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* ============================================================
+                            Header-Bloc1                  
+============================================================ */
+
+.contact-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    color: rgb(61, 61, 61);
+}
+
+/* ============================================================
+                        Header-Bloc1-Contenue                  
+============================================================ */
+
+.intro {
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    border: 3px solid black;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* ============================================================
+                        Header-Formulaire                  
+============================================================ */
+
+.contact-form {
+    background-color: black;
+    box-shadow: 5px 5px 10px black;
+    border: 3px solid black;
+    padding: 25px;
+}
+
+.contact-form label {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+/* ============================================================
+                        Bouton Message                  
+============================================================ */
+
+.contact-form button {
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ============================================================
+                            Footer                  
+============================================================ */
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: rgb(0, 195, 255);
+    font-size:large
+}
+
+.footer a {
+    color: rgb(0, 195, 255);
+    font-size: 15px;
+}
+
+/* ============================================================
+                        Media Query                  
+============================================================ */
+
+@media screen and (max-width: 600px) {
+
+    .contact-container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .top-bar h1 {
+        font-size: 24px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}
