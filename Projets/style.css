@@ -6,6 +6,7 @@ body {
     font-family: "Times New Roman", serif;
     color: white;
     text-align: center;
+    background-attachment: fixed;
 }
 
 /* ============================================================

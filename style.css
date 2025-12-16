@@ -21,6 +21,8 @@ body {
     background-image: url("images/pixel_clouds.jpg");
     background-size: cover;
     font-family: Arial, sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* ============================================================
