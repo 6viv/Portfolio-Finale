@@ -1,0 +1,174 @@
+/* ============================================================
+                            BASE
+============================================================ */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/lmmuju09hgk18ebucmiy.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000;
+}
+
+a {
+    color: navy;
+    font-weight: bold;
+}
+
+/* ============================================================
+                        CONTENEUR GLOBAL
+============================================================ */
+
+.page {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ============================================================
+                            HEADER
+============================================================ */
+
+header {
+    background-color: #e9eef6;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0 black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-shadow: 2px 2px white;
+}
+
+header p {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* ============================================================
+                            BLOCS
+============================================================ */
+
+.bloc {
+    background: #e9eef6;
+    border: 3px solid black;
+    box-shadow: 6px 6px 0 black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.bloc h2 {
+    margin-top: 0;
+    color: #315fea;
+    text-shadow: 1.5px 1.5px white;
+}
+
+.bloc ul li {
+    list-style: none;
+}
+
+/* ============================================================
+                            LISTES
+============================================================ */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ============================================================
+                        ARTICLES DE VEILLE
+============================================================ */
+
+.article {
+    background: #ffffff;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.article h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.source {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.article a {
+    background: white;
+    border: 2px solid black;
+    padding: 6px 10px;
+    box-shadow: 1px 1px 0 black;
+    text-decoration: none;
+}
+
+.article a:hover {
+    background: yellow;
+}
+
+/* ============================================================
+                            BOUTONS
+============================================================ */
+
+.liens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.liens a {
+    background: white;
+    border: 2px solid black;
+    padding: 8px 12px;
+    box-shadow: 3px 3px 0 black;
+    text-decoration: none;
+}
+
+.liens a:hover {
+    background: yellow;
+}
+
+/* ============================================================
+                            Footer                  
+============================================================ */
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer p {
+    color: white;
+}
+
+/* ============================================================
+                        Media Query
+============================================================ */
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    .page {
+        padding: 10px;
+    }
+}
