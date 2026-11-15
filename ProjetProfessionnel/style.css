@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #73ff83;
+    --dark-green: #0e7d2e;
+    --black: #050805;
+    --panel: #e7f2e8;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    color: #0b1b0e;
+    background-color: #07130a;
+    background-image:
+        linear-gradient(rgba(115,255,131,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(115,255,131,0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+}
+
+.hero {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto 25px;
+    padding: 25px;
+    color: var(--green);
+    background: #020402;
+    border: 3px solid var(--green);
+    box-shadow: 7px 7px 0 #000;
+}
+
+.hero h1 {
+    margin: 4px 0 10px;
+    font-size: 36px;
+}
+
+.hero p {
+    line-height: 1.5;
+}
+
+.prompt {
+    margin: 0;
+    font-size: 13px;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.panel {
+    margin-bottom: 28px;
+    border: 3px solid #000;
+    background: var(--panel);
+    box-shadow: 7px 7px 0 #000;
+}
+
+.panel-title {
+    padding: 8px 12px;
+    color: var(--green);
+    background: #020402;
+    border-bottom: 3px solid #000;
+    font-weight: bold;
+}
+
+.panel-body {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.missions-grid,
+.sources-grid,
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.missions-grid div,
+.sources-grid article,
+.actions-grid article {
+    padding: 14px;
+    background: white;
+    border: 2px solid #111;
+}
+
+.missions-grid strong,
+.missions-grid span {
+    display: block;
+}
+
+.missions-grid strong {
+    color: var(--dark-green);
+    margin-bottom: 6px;
+}
+
+.sources-grid h3,
+.actions-grid h3 {
+    margin-top: 0;
+    color: var(--dark-green);
+}
+
+.sources-grid a,
+.proof-links a {
+    display: inline-block;
+    padding: 6px 9px;
+    color: black;
+    background: var(--green);
+    border: 2px solid black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.evolution,
+.diagnostic-note {
+    margin-top: 18px;
+    padding: 14px;
+    background: #d2ead5;
+    border-left: 6px solid var(--dark-green);
+}
+
+.diagnostic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.diagnostic-grid > div {
+    padding: 14px;
+    background: white;
+    border: 2px solid black;
+}
+
+.acquis {
+    border-left: 8px solid #1f8b3d !important;
+}
+
+.developper {
+    border-left: 8px solid #bf7d00 !important;
+}
+
+.timeline {
+    border-left: 4px solid var(--dark-green);
+    margin-left: 12px;
+    padding-left: 22px;
+}
+
+.timeline article {
+    margin-bottom: 22px;
+    padding: 12px;
+    background: white;
+    border: 2px solid black;
+}
+
+.timeline span {
+    display: inline-block;
+    color: white;
+    background: var(--dark-green);
+    padding: 3px 7px;
+    font-weight: bold;
+}
+
+.timeline h3 {
+    margin-bottom: 5px;
+}
+
+.proof-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    color: var(--green);
+}
+
+footer a {
+    color: var(--green);
+}
+
+@media screen and (max-width: 760px) {
+    .missions-grid,
+    .sources-grid,
+    .actions-grid,
+    .diagnostic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero,
+    .container {
+        width: 95%;
+    }
+}

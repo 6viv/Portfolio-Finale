@@ -21,29 +21,29 @@
 
     <section class="intro">
         <h2>Entrons en contact</h2>
-        <p>Vous peuvez utiliser le formulaire ci-dessous pour me contacter.</p>
+        <p>Vous pouvez utiliser le formulaire ci-dessous pour me contacter.</p>
     </section>
 
     <section class="contact-form">
 
         <label>
             Nom et Prénom
-            <input type="text" placeholder="Ex : Maxime Descourt">
+            <input type="text" name="nom" placeholder="Ex : Maxime Descourt" required>
         </label>
 
         <label>
             Adresse email
-            <input type="email" placeholder="exemple@email.com">
+            <input type="email" name="email" placeholder="exemple@email.com" required>
         </label>
 
         <label>
             Numéro de téléphone
-            <input type="text" placeholder="06 00 00 00 00">
+            <input type="tel" name="telephone" placeholder="06 00 00 00 00">
         </label>
 
         <label>
             Motif de contact
-            <select>
+            <select name="motif" required>
                 <option>Sélectionnez un motif</option>
                 <option>Projet professionnel</option>
                 <option>Demande d'information</option>
@@ -54,10 +54,10 @@
 
         <label>
             Message
-            <textarea placeholder="Rédigez votre message ici..."></textarea>
+            <textarea name="message" placeholder="Rédigez votre message ici..." required></textarea>
         </label>
 
-        <button>Envoyer le message</button>
+        <button type="button">Envoyer le message</button>
         <p id="confirmation" style="display:none; color: white; margin-top:15px;">Message envoyé avec succès !</p>
 
 

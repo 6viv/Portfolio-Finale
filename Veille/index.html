@@ -1,109 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Veille technologique en cybersécurité réalisée dans le cadre du BTS SIO. Focus sur les failles de sécurité, sources spécialisées et articles analysés.">
-    <meta name="keywords" content="veille technologique, cybersécurité, failles de sécurité, BTS SIO, ANSSI, BleepingComputer">
+    <meta name="description" content="Veille technologique en cybersécurité de Maxime Descourt : cyberattaque contre des systèmes de réfrigération en France, comparaison de sources et analyse personnelle.">
     <meta name="author" content="Maxime Descourt">
-    <title>Veille technologique Cybersécurité - Portfolio BTS SIO</title>
+    <meta name="robots" content="index, follow">
+    <title>Veille cybersécurité - Portfolio BTS SIO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <div class="page">
+<div class="page">
 
     <header>
         <h1>Veille technologique - Cybersécurité</h1>
+        <p>Thème actuel : sécurité des systèmes connectés et infrastructures</p>
     </header>
 
     <section class="bloc">
-        <h2>Qu'est-ce que la veille technologique ?</h2>
+        <h2>Ma méthode de veille</h2>
         <p>
-            La veille technologique consiste à regarder régulièrement les évolutions, innovations et menaces dans un domaine précis.
-            Dans le cadre du BTS SIO, elle permet de rester informé des risques informatiques et des nouvelles technologies.
+            Mon objectif n'est pas seulement de conserver des liens. Pour chaque sujet important,
+            j'essaie de croiser plusieurs sources : une source officielle pour les faits et la réponse
+            institutionnelle, une source technique pour comprendre l'incident et une source de presse
+            pour replacer l'événement dans son contexte.
         </p>
     </section>
 
     <section class="bloc">
-        <h2>Thème de la veille</h2>
-        <p>
-            Ma veille technologique est orientée sur la cybersécurité, et plus particulièrement sur les failles de sécurité.
-            Ce thème est important car les vulnérabilités peuvent mettre en danger des données, des systèmes ainsi que des utilisateurs.
-        </p>
-    </section>
+        <h2>Cas étudié - Cyberattaque contre des systèmes de réfrigération en France</h2>
 
-    <section class="bloc">
-        <h2>Sources de veille utilisées</h2>
-        <h3>Sites spécialisés</h3>
-        <ul>
-            <li>BleepingComputer</li>
-            <li>ANSSI</li>
-        </ul>
-
-        <h3>Réseaux et communautés</h3>
-        <ul>
-            <li>LinkedIn - groupes spécialisés en cybersécurité</li>
-            <li>Reddit - communauté r/cybersecurity</li>
-        </ul>
-
-        <p><h3>Liens :</h3></p>
-
-        <div class="liens">
-            <a href="https://www.bleepingcomputer.com/">BleepingComputer</a>
-            <a href="https://www.cert.ssi.gouv.fr/">ANSSI</a>
-            <a href="https://www.linkedin.com/company/cybersecurity-news/posts/?feedView=all">LinkedIn - Cyber Security News</a>
-            <a href="https://www.reddit.com/r/cybersecurity/">Reddit - r/cybersecurity</a>
-        </div>
-    </section>
-
-    <section class="bloc">
-        <h2>Articles analysés - Failles de sécurité</h2>
-
-        <div class="article">
-            <h3>Amazon SES increasingly abused in phishing to evade detection</h3>
+        <div class="article principal">
+            <h3>Environ 700 sites de la grande distribution ciblés</h3>
+            <div class="source">Événement : nuit du 11 au 12 octobre 2026 — attribution publique : 9 novembre 2026</div>
             <p>
-                Les cybercriminels exploitent aujourd’hui des services légitimes comme Amazon Simple Email Service pour envoyer des emails de phishing crédibles et difficiles à détecter.
-
-En utilisant des clés AWS exposées en ligne, ils automatisent l’envoi massif de messages frauduleux qui contournent les filtres de sécurité.
-
-Cette évolution montre que les attaques reposent désormais sur le détournement d’outils fiables, rendant la prévention et la gestion des accès plus essentielles que jamais.
+                Des contrôleurs de réfrigération utilisés dans des centaines de sites français ont été compromis.
+                Les paramètres de dégivrage ont été modifiés vers des températures élevées, provoquant des pertes
+                de marchandises et, dans certains cas, des départs de feu.
             </p>
-            
-            <a href="https://pushsecurity.com/webinar/phishing-2025-review?utm_source=bleepingcomputer&utm_medium=sponsored-content&utm_term=ad">BleepingComputer</a>
+            <p>
+                Après investigation, les autorités françaises ont attribué cette campagne à l'Iran,
+                en désignant l'unité cyber-offensive Shahid Kaveh, affiliée au Corps des Gardiens
+                de la Révolution islamique.
+            </p>
+            <p>
+                La réaction française a été diplomatique, judiciaire et cyber : convocation de l'ambassadeur iranien,
+                proposition de nouvelles sanctions européennes et possibilité de prendre des mesures supplémentaires
+                publiques ou non publiques, présentées comme nécessaires et proportionnées.
+            </p>
         </div>
-
     </section>
 
     <section class="bloc">
-        <h2>Méthode pour rester à jour</h2>
-        <p>
-            Pour maintenir cette veille technologique, je consulte régulièrement des sites spécialisés,
-            j'utilise des flux RSS et je suis des experts en cybersécurité sur les réseaux sociaux.
-            Cela me permet d'être informé rapidement des nouvelles failles et menaces.
-        </p>
+        <h2>Sources croisées</h2>
+
+        <div class="source-grid">
+            <article class="source-card">
+                <h3>France Diplomatie</h3>
+                <p><strong>Nature :</strong> source officielle.</p>
+                <p><strong>Ce qu'elle apporte :</strong> attribution de l'attaque et réponse officielle de la France.</p>
+                <p><strong>Limite :</strong> elle expose la position de l'État français ; elle n'est pas une analyse indépendante.</p>
+                <a href="https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/declaration-d-attribution-a-l-iran-de-cyber-attaques-visant-la-france" target="_blank" rel="noopener noreferrer">Voir la source</a>
+            </article>
+
+            <article class="source-card">
+                <h3>CERT-FR / ANSSI</h3>
+                <p><strong>Nature :</strong> source technique institutionnelle.</p>
+                <p><strong>Ce qu'elle apporte :</strong> description de la campagne, victimes, impacts et éléments d'imputation.</p>
+                <p><strong>Limite :</strong> document technique, moins adapté pour comprendre le contexte politique ou économique.</p>
+                <a href="https://www.cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009" target="_blank" rel="noopener noreferrer">Voir la source</a>
+            </article>
+
+            <article class="source-card">
+                <h3>Le Monde</h3>
+                <p><strong>Nature :</strong> presse généraliste avec journalistes spécialisés.</p>
+                <p><strong>Ce qu'elle apporte :</strong> mise en contexte, conséquences dans les supermarchés et explications accessibles.</p>
+                <p><strong>Limite :</strong> la presse dépend des informations disponibles et certaines parties peuvent être réservées aux abonnés.</p>
+                <a href="https://www.lemonde.fr/pixels/article/2026/11/10/derriere-la-cyberattaque-contre-les-frigos-de-supermarches-l-iran-et-l-unite-cyber-shahid-kaveh-des-gardiens-de-la-revolution_6808819_4408996.html" target="_blank" rel="noopener noreferrer">Voir la source</a>
+            </article>
+        </div>
     </section>
 
     <section class="bloc">
-        <h2>Conclusion</h2>
+        <h2>Ce que je retiens de cet événement</h2>
+
+        <div class="learn-grid">
+            <div>
+                <h3>1. Un équipement banal peut devenir critique</h3>
+                <p>
+                    Un contrôleur de froid connecté peut sembler secondaire, mais sa compromission peut avoir
+                    des conséquences physiques, économiques et humaines.
+                </p>
+            </div>
+            <div>
+                <h3>2. Les systèmes connectés doivent être maintenus</h3>
+                <p>
+                    Cet incident rappelle l'importance des mises à jour, de la supervision et de la maîtrise
+                    des équipements exposés ou administrables à distance.
+                </p>
+            </div>
+            <div>
+                <h3>3. La cybersécurité dépasse l'informatique classique</h3>
+                <p>
+                    Elle concerne aussi les systèmes industriels, les équipements connectés et les services
+                    indispensables au fonctionnement d'une organisation.
+                </p>
+            </div>
+            <div>
+                <h3>4. L'attribution doit être recoupée</h3>
+                <p>
+                    Pour un sujet sensible, je préfère distinguer les faits techniques, l'attribution officielle
+                    et les analyses de presse plutôt que de reprendre une seule version sans recul.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bloc">
+        <h2>Lien avec mon projet professionnel</h2>
         <p>
-            Cette veille technologique me permet de mieux comprendre les enjeux de la cybersécurité
-            et d'adopter de bonnes pratiques pour sécuriser les systèmes informatiques.
+            Cette veille fait évoluer ma vision de la cybersécurité. Je m'intéressais d'abord surtout
+            aux failles applicatives et au pentest. Ce type d'incident me montre qu'un professionnel de la sécurité
+            doit aussi comprendre les réseaux, les systèmes, les équipements connectés, la gestion des correctifs
+            et les conséquences métier d'une attaque.
+        </p>
+        <p>
+            Cela confirme mon choix de consolider d'abord les compétences SISR avant de me spécialiser davantage.
+        </p>
+        <a class="big-link" href="../ProjetProfessionnel/index.html">Voir mon projet professionnel</a>
+    </section>
+
+    <section class="bloc">
+        <h2>Comment je reste à jour</h2>
+        <div class="liens">
+            <a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer">CERT-FR</a>
+            <a href="https://cyber.gouv.fr/" target="_blank" rel="noopener noreferrer">ANSSI</a>
+            <a href="https://www.bleepingcomputer.com/" target="_blank" rel="noopener noreferrer">BleepingComputer</a>
+            <a href="https://www.reddit.com/r/cybersecurity/" target="_blank" rel="noopener noreferrer">r/cybersecurity</a>
+        </div>
+        <p>
+            Je privilégie les sources officielles et techniques pour valider les faits, puis j'utilise
+            des médias spécialisés ou des communautés pour identifier de nouveaux sujets à vérifier.
         </p>
     </section>
 
-  </div>
+</div>
 
-    <footer>
-        <p>
-            <a href="../index.html">⬅ Retour à l'accueil</a>
-        </p>
-        <p>
-            © 2026 - Portfolio personnel
-        </p>
-    </footer>
+<footer>
+    <p><a href="../index.html">⬅ Retour à l'accueil</a></p>
+    <p>© 2026 - Portfolio personnel</p>
+</footer>
 
 </body>
 </html>

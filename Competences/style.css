@@ -149,3 +149,60 @@ footer p {
             width: 50px;
         }
     }
+
+.header p {
+    margin: 3px 0 0;
+}
+
+.skill h2 {
+    font-size: 18px;
+    margin: 6px 0;
+}
+
+.skill a,
+.objectif-link a {
+    display: inline-block;
+    color: blue;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.niveau,
+.preuve {
+    font-size: 14px;
+}
+
+.preuve {
+    background: #f4f4f4;
+    border-left: 4px solid #506a8c;
+    padding: 8px;
+}
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 15px;
+}
+
+.progress-grid > div {
+    background: #dedede;
+    border: 2px solid #7f7f7f;
+    border-right-color: white;
+    border-bottom-color: white;
+    padding: 10px;
+}
+
+.progress-grid h3 {
+    margin-top: 0;
+}
+
+.objectif-link {
+    padding: 0 15px 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .progress-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -163,3 +163,30 @@ footer a {
         margin: 60px auto;
     }
 }
+
+
+.tag {
+    display: inline-block;
+    background: #000080;
+    color: white;
+    border: 2px solid black;
+    padding: 4px 7px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.popup-contenu h3 {
+    margin-bottom: 4px;
+    color: #003366;
+}
+
+.popup-contenu a:not(.close) {
+    display: inline-block;
+    margin: 8px 8px 0 0;
+    background: #fff;
+    color: #000080;
+    border: 2px solid black;
+    padding: 5px 8px;
+    font-weight: bold;
+}

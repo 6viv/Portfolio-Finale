@@ -697,3 +697,38 @@ footer p {
     }
 
 }
+
+.preuve-stage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.preuve-stage-grid > div {
+    background: var(--blanc);
+    border: 2px solid var(--noir);
+    padding: 15px;
+}
+
+.preuve-stage-grid strong {
+    color: var(--bleu-fonce);
+}
+
+.rapport-link a {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--bleu-clair);
+    color: var(--noir);
+    border: 2px solid var(--noir);
+    box-shadow: 3px 3px 0 var(--noir);
+    padding: 9px 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .preuve-stage-grid {
+        grid-template-columns: 1fr;
+    }
+}

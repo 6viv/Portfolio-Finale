@@ -172,3 +172,50 @@ footer p {
         padding: 10px;
     }
 }
+
+.source-grid,
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 18px;
+}
+
+.source-card,
+.learn-grid > div {
+    background: white;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 black;
+    padding: 15px;
+}
+
+.source-card h3,
+.learn-grid h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.source-card a,
+.big-link {
+    display: inline-block;
+    background: white;
+    border: 2px solid black;
+    padding: 7px 10px;
+    box-shadow: 2px 2px 0 black;
+    text-decoration: none;
+}
+
+.principal {
+    border-left: 8px solid #315fea;
+}
+
+.big-link {
+    margin-top: 8px;
+}
+
+@media screen and (max-width: 700px) {
+    .source-grid,
+    .learn-grid {
+        grid-template-columns: 1fr;
+    }
+}
